@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zakócs János">
+    <meta name="description" content="Elképzelt weblap a TörMémelem nevű magyar mémoldal számára.">
+    <title>TörMémelem</title>
+    <link href="../stiluslapok/tormemelem.css" rel="stylesheet">
+    <link href="../kepek/tormemelem_16x16.ico" rel="icon" type="image/x-icon">
+    <script src="../javascript/jquery-3.7.1.min.js"></script>
+    <script src="../javascript/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#urlap").validate({
+                rules: {
+                    nev: "required",
+                    email_cim: {
+                        required: true,
+                        email: true
+                    },
+                    tel_szam: {
+                        number: true
+                    },
+                    elfogad: "required",
+                    szul_ev: {
+                        date: true
+                    }
+                },
+                messages: {
+                    nev: "Meg kell adnod a nevedet",
+                    email_cim: {
+                        email: "Valós email címet adj meg(pl.: minta.ember@gmail.com)",
+                        required: "Szükséges az email cím megadása!"
+                    },
+                    tel_szam: {
+                        number: "Számot adj meg!"
+                    },
+                    elfogad: "Fogadd el a nyilatkozatunkat továbblépéshez.",
+                    szul_ev: {
+                        date: "Dátumot adj meg"
+                    }
+                },
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>TörMémelem Felsőfokon</h1>
+    </header>
+    <div class="container_main">
+        <nav>
+            <ul class="nav_container">
+                <li>
+                    <p><a href="../index.html">Főoldal</a></p>
+                </li>
+                <li>
+                    <p><a href="memeink.html">Mémeink</a></p>
+                </li>
+                <li>
+                    <p><a href="tori_erettsegi.html">Töri érettségi</a></p>
+                </li>
+                <li>
+                    <p id="aktualis"><a href="#">Visszajelzés</a></p>
+                </li>
+                <li>
+                    <p><a href="sajat_mem.html">Saját mém beküldése</a></p>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php" id="urlap" novalidate>
+                <h2>Visszajelzés</h2>
+                <p class="form"><label for="nev">Név: </label>
+                    <input type="text" id="nev" name="nev" placeholder=" (Vezetéknév, Keresztnév)" size="20">
+                </p>
+                <p class="form"><label for="e_mail">Email cím: </label>
+                    <input type="text" id="e_mail" name="email_cim" placeholder="minta@mail.com">
+                </p>
+                <p class="form"><label for="tel">Telefonszám: </label>
+                    <input type="text" id="tel" name="tel_szam" placeholder="36123456789">
+                </p>
+                <p class="form"><label for="szulev">Szuletesi datum: </label>
+                    <input type="text" id="szulev" name="szul_ev" placeholder="">
+                </p>
+                <p>Mennnyire szórakoztató számodra az oldalunk?</p>
+                <p class="form">Egyáltalán nem <input type="range" min="1" max="5" value="3" name="vicces"> Nagyon
+                    vicces</p>
+                <p>Mennyire offenzívek a mémeink számodra</p>
+                <p class="form">Egyáltalán nem <input type="range" min="1" max="5" value="3" name="offenziv"> Nagyon</p>
+                <p>Mennyit segített a történelem felkészítőnk?</p>
+                <p class="form">Egyáltalán nem <input type="range" min="1" max="5" value="3" name="hasznos"> Nagyon
+                    sokat</p>
+                <p class="form"><label for="panaszok">Konkrét kritikák az oldallal kapcsolatban</label>
+                    <textarea id="panaszok" name="panasz" rows="5"></textarea>
+                </p>
+                <p class="form"><label for="megjegyzesek">Megjegyzések az oldallal kapcsolatban</label>
+                    <textarea id="megjegyzesek" name="megjegyzes" rows="5"></textarea>
+                </p>
+                <p><label for="elfogad">Elfogadom a TörMémelem felhasználói adatkezelési nyilatkozatát</label>
+                    <input type="checkbox" id="elfogad" name="elfogad"></p>
+                <p class="gomb_rendezes"><input type="submit" value="Elküld" class="gombok"></p>
+                <p class="gomb_rendezes"><input type="reset" value="Adatok törlése" class="gombok"></p>
+            </form>
+        </article>
+        <aside>
+            <h2>Adminjaink elérése:</h2>
+            <p>
+                Kovács Béla: <br>Email: kvcs.bela@gmail.com<br>Telefonszám: 06-70-123-4567
+                <!--Az email címek,nevek,tel.számok fiktívek!-->
+            </p>
+            <p>
+                Takács Bence: <br>Email: takacs.bence96@gmail.com<br>Telefonszám: 06-30-345-1212
+            </p>
+            <p>
+                Facebook oldalunk:<br><a href="https://www.facebook.com/TorMEMelem/" target="_blank">TörMémelem
+                    Facebook</a>
+            </p>
+            <p>
+                Instagram oldalunk:<br><a href="https://www.instagram.com/tormemelemfelsofokon/"
+                    target="_blank">TörMémelem
+                    Instagram</a>
+            </p>
+        </aside>
+        <footer>
+            <p class="labjegyzet">Ez az oldal gyakorlásra szolgál</p>
+        </footer>
+    </div>
+</body>
+
+</html>

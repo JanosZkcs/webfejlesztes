@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zakócs János">
+    <meta name="description" content="Elképzelt weblap a TörMémelem nevű magyar mémoldal számára.">
+    <title>TörMémelem</title>
+    <link href="../stiluslapok/tormemelem.css" rel="stylesheet">
+    <link href="../kepek/tormemelem_16x16.ico" rel="icon" type="image/x-icon">
+    <script src="../javascript/jquery-3.7.1.min.js"></script>
+    <script src="../javascript/galleria-1.6.1/galleria-1.6.1/dist/galleria.min.js"></script>
+    <script src="../javascript/galleria-1.6.1/galleria-1.6.1/dist/themes/classic/galleria.classic.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#images').galleria(
+                width = 500,
+                height = 500
+            );
+        });
+    </script> <!--Forrás: Dr. Láng Blanka Klára, JQuery előadás-->
+</head>
+
+<body>
+    <header>
+        <h1>TörMémelem Felsőfokon</h1>
+    </header>
+    <div class="container_main">
+        <nav>
+            <ul class="nav_container">
+                <li>
+                    <p><a href="../index.html">Főoldal</a></p>
+                </li>
+                <li>
+                    <p id="aktualis"><a href="#">Mémeink</a></p>
+                </li>
+                <li>
+                    <p><a href="tori_erettsegi.html">Töri érettségi</a></p>
+                </li>
+                <li>
+                    <p><a href="visszajelzes.html">Visszajelzés</a></p>
+                </li>
+                <li>
+                    <p><a href="sajat_mem.html">Saját mém beküldése</a></p>
+                </li>
+            </ul>
+        </nav>
+        <article id="images" class="gal_kepek">
+            <img src="../galeria/1_mem.jpg" alt="IV.Károly 1921-ben, mikor visszatér Magyarországra.
+             Facebook komment: Ji napot akgualis még az álás" title="IV.Károly puccskísérlete">
+            <img src="../galeria/2_mem.jpg" alt="Inter játékos befejelné a labdát a kapuba,de Lukaku blokkol
+            . Feliratok: fejelő játékos - Hunyadi János, Lukaku - I.Ulászló király, labda: győzelem a várnai csatában"
+                title="Várnai csata">
+            <img src="../galeria/3_mem.jpg"
+                alt="Kép: Szovjet katonák a hóban állnak. Felirat:
+             Nem mondom, hogy furcsa az időjárás...de vörös katonák jelentek meg a kertben és Budapest iránt érdeklődnek" title="Budapest ostroma">
+            <img src="../galeria/4_mem.jpg" alt="Kép: pókemberek mutatnak egymásra, ugyanúgy néznek ki.
+            Felirat:Hunyadi Mátyás: *érdem és származás alapján oszt tisztségeket*
+            Szintén Hunyadi Mátyás udvara: pókemberek feliratozva:
+            Vitéz János, Ernuszt János, Thuróczi János, Corvin János, Giskra János, Janus Pannonius"
+                title="Mátyás király udvara">
+            <img src="../galeria/5_mem.jpg"
+                alt="Felirat:Március ifjak, ha Landerer nem mondja,hogy foglaljanak le egy nyomdagépet.
+            Kép: Donald Trump sapkáját kezében tartva szomorúan sétál, megsokszorozva, feje helyére illesztve a márciusi ifjak fejeit."
+                title="Csalódott márciusi ifjak">
+            <img src="../galeria/6_mem.jpg" alt="Felirat: Hellén poliszok: Ki szerelje fel az athéni flottát és ki vezesse a szárazföldi sereget? Themisztoklész: 
+            Kép: Videórészlet az 'Egy nap a hivatalban' című videóból. 'Pitbull terrier' a riportnek:
+            Hát Jómagam...Én meg Leónidasz elvállalnám." title="Leonidász és Themisztoklész">
+            <img src="../galeria/7_mem.jpg"
+                alt="Felirat: Howard Carter, amikor megtalálta Tutanhamon sírját: Facebook komment: Kiez  a munia"
+                title="Tutanhamon sírja">
+            <img src="../galeria/8_mem.jpg" alt="Felirat: Fogságba esett francia lovagok az azincourt-i csata után. 1415., korabeli freskó.
+            Kép: Hasbulla Magomedov és egy másik személy sárosan ül a földön egy pocsojában."
+                title="Azincourt-i csata">
+            <img src="../galeria/9_mem.jpg" alt="Felirat: Olaszország: *az antant oldalán lép be az első világháborúba. A Monarchia:-Nem ugyanazon az oldalon vagyunk? Olaszország:
+            Kép: 'Blöff' filmrészlet. Brad Pitt mondja:A bunyó sem ugyanaz, komám."
+                title="Olaszország és a központi hatalmak">
+            <img src="../galeria/10_mem.jpg" alt="Kép(oszott): (1.sáv) Kisfiú nem tud úszni, eközben egy idős hölgy felemel a háttérben egy kislányt
+            .(2.sáv) Víz alján egy székhez láncoltan ül egy csontváz.
+            Feliratok: kisfiú: Buda, kislány: Pest, idős hölgy:Magyarok, csontváz:Óbuda" title="Budapest létrejötte">
+            <img src="../galeria/11_mem.jpg" alt="Felirat: Windsch-Grätz ahogy hadijelentést ír a kápolnai csatáról
+            Kép: Férfi rajzol egy házikót táblára, következőket mondja:
+            I'm not very good at it. But it doesn't matter (magyarul:nem vagyok jó ebben, de nem számít)"
+                title="Windsch-Grätz jelentése">
+            <img src="../galeria/12_mem.jpg" alt="Felirat: Horthy Miklós ellentengernagy 1918, kép alatta: Willem Dafoe a kikötőben színes kép.Felirat 2:
+            Horthy Miklós kormányzó 1920, kép alatta: Willem Dafoe szakállal, depressziósan fekete-fehér háttérrel"
+                title="Horthy Miklós 1918 és 1920 között">
+            <img src="../galeria/13_mem.jpg" alt="Felirat: Katolikus bíró, polgármester vagy helytartó: *létezik* Csehek:
+            Kép: Alacsony rajzfilmfigura kiejti a gyereket a kezéből." title="Defenesztráció">
+            <img src="../galeria/14_mem.jpg"
+                alt="Kép:Oroszlánszívű Richárd és a keresztesek menetelnek a sivatagban.
+            Felirat:Nem mondom hogy meleg van...de az imént jelent meg a ház előtt Oroszlánszívű Richárd és Szaladin táborát kereste."
+                title="Oroszlánszívű Richárd és a keresztesek">
+            <img src="../galeria/15_mem.jpg" alt="kép: katona megvédi a késektől, fegyverektől az alvó kisgyereket
+            . Feliratok: katona - Uram, kisgyerek - 
+            mink, fegyverek és kések - magyar nyilak" title="'A magyarok nyilaitól ments meg Uram minket'">
+            <img src="../galeria/16_mem.jpg"
+                alt="Felirat:Norvég berserker a Stamford Bridge-i csatában :
+            Kép: részlet főzőműsorból, ahogy Damu Roland kiakad: 'Aki erős, itt megáll előttem!' Damu Roland egy bárddal és egy vikingek által használt sisakkal van ábrázolva"
+                title="Stamford Bridge-i csata">
+            <img src="../galeria/17_mem.jpg"
+                alt="Felirat: Amikor valaki 1849-ben érdeklődik a Kossuth-bankók pénzügyi hátteréről.
+            Kép alatta: részlet a Gru rajzfilmből, kissé átírt szöveggel: Gru mondja - in terms of nemesfém fedezet,we have no nemesfém fedezet"
+                title="Kossuth-bankók">
+            <img src="../galeria/18_mem.jpg" alt="Kép (összeszerkesztett): (1.ábra): Godzilla és King-Kong harcol. (2.ábra):Godzilla és King-Kong menekül egy baseball ütős kutya elől
+            . Feliratok: Godzilla - magyar bárók, King-Kong - IV.Béla, baseball ütős kutya - mongolok"
+                title="Tatárjárás">
+            <img src="../galeria/19_mem.jpg" alt="Felirat: Oroszország...Sosem értettem hogyan tudta ez a kis ország felvenni a versenyt az amerikaiakkal...
+            Kép: Térkép, kinagyítva 'Oroszország' jelzővel, csak a poroszországi orosz területeket mutatja"
+                title="Hidegháborús versengés">
+            <img src="../galeria/20_mem.jpg" alt="Kép: Két srác kezet fog a sliccén kinyúlva, rejtetten.
+            Feliratok: Két srác: Szapolyai János és I.Ferdinánd, kézfogás: Váradi béke" title="Váradi egyezmény">
+            <img src="../galeria/21_mem.jpg" alt="Felirat: *A Kádár korszakban nem volt munkanélküliség*
+            Munka a Kádár-korszakban:
+            Kép: Hal a Spongyabob rajzfilmből felmos a tenger alján" title="Munkanélküliség 1956-1989 közt.">
+            <img src="../galeria/22_mem.jpg"
+                alt="Kép: navigációs térkép utat mutat Dalmáciába IV.Bélának. A képen kitérőt jelöl, '2 hónap fogság' címen Ausztriában"
+                title="Osztrák fogságban IV.Béla">
+            <img src="../galeria/23_mem.jpg"
+                alt="Kép: Részeg ember bealudt a söröktől. Feliratok: Részeg ember kidőlve: Sztálin szobor, sörök: '56-os tüntetők"
+                title="Sztálin szobor ledöntése">
+            <img src="../galeria/24_mem.jpg"
+                alt="Kép: Vonat közeledik a busz felé, majd nekimegy. Feliratok: Vonat - szárnyas huszárok, busz - törökök Bécs alatt 1683-ban"
+                title="Szárnyas huszárok Bécsnél">
+            <img src="../galeria/25_mem.jpg" alt="Kép: micimackó és malacka beszélget, a végén micimackó fejére kerül a magyar korona. 
+            Beszéd: Micimackó: Én nagyon szeretem a mézet malacka! De tudod hogy mit nem szeretek - A szeniorátust"
+                title="I.István megkoronázása">
+            <img src="../galeria/26_mem.jpg"
+                alt="Felirat: Katolikus papok a clunyi reformok után. Kép:Family Guyból Peter kinéz a bunkeréből, amin az a felirat olvasható, hogy 'no girls allowed' (~nem jöhetnek be lányok)"
+                title="Clunyi-i reformok">
+            <img src="../galeria/27_mem.jpg"
+                alt="Kép: két vonat összeütközött egy vágány elágazásánál. Feliratok: vonatok - Szapolyai János és Habsburg Ferdinánd, sín: Magyar Királyság"
+                title="Kettős királyválasztás">
+            <img src="../galeria/28_mem.jpg" alt="Felirat: Ókori szerzők, ahogy a seregek méreteiről írnak:
+            Kép: lány rosszul számol a táblánál, '248+208'-ra 4416-ot ad válaszként" title="Történetírás túlzásai">
+        </article>
+        <aside>
+            <h2>Adminjaink elérése:</h2>
+            <p>
+                Kovács Béla: <br>Email: kvcs.bela@gmail.com<br>Telefonszám: 06-70-123-4567
+                <!--Az email címek,nevek,tel.számok fiktívek!-->
+            </p>
+            <p>
+                Takács Bence: <br>Email: takacs.bence96@gmail.com<br>Telefonszám: 06-30-345-1212
+            </p>
+            <p>
+                Facebook oldalunk:<br><a href="https://www.facebook.com/TorMEMelem/" target="_blank">TörMémelem
+                    Facebook</a>
+            </p>
+            <p>
+                Instagram oldalunk:<br><a href="https://www.instagram.com/tormemelemfelsofokon/"
+                    target="_blank">TörMémelem
+                    Instagram</a>
+            </p>
+        </aside>
+        <footer>
+            <p class="labjegyzet">Ez az oldal gyakorlásra szolgál</p>
+        </footer>
+    </div>
+</body>
+
+</html>
