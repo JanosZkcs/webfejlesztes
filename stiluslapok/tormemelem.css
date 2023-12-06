@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Simonetta:wght@400;700&display=swap');
+/*letöltve: 2023.11.30.*/
+/*chatgpt segített a betűimportálásban.*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 235, 235);
+    font-family: 'Simonetta',
+        sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url("../kepek/tormemelem_borito.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 30vh;
+    background-color: rgb(197,
+            214,
+            234);
+}
+
+h1 {
+    margin: 0;
+    color: rgb(233,
+            184,
+            23);
+    text-indent: 5%;
+    font-size: 2.5em;
+}
+
+.container_main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    align-content: space-around;
+}
+
+nav {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+article,
+aside {
+    border: 2px solid rgb(233,
+            184,
+            23);
+    border-radius: 20px;
+    margin: 2% 5%;
+    background-color: rgb(197,
+            214,
+            234);
+    width: 90%;
+}
+
+footer {
+    width: 100%;
+}
+
+.nav_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul p {
+    border: 3px solid rgb(197,
+            214,
+            234);
+    border-radius: 20px;
+    margin: 4% 2%;
+    text-align: center;
+}
+
+nav ul a {
+    display: flex;
+    text-decoration: none;
+    padding: 3% 0;
+    color: rgb(233,
+            184,
+            23);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+nav p#aktualis {
+    background-color: rgb(171, 199, 231);
+}
+
+nav p:hover {
+    color: rgb(245, 217, 125);
+    background-color: rgb(171, 199, 231);
+}
+
+aside p {
+    text-align: center;
+}
+
+article h2 {
+    margin: 0;
+}
+
+article h2,
+h3,
+aside h2 {
+    text-align: center;
+    color: rgb(233,
+            184,
+            23);
+    margin: 2%;
+}
+
+article p {
+    text-align: justify;
+    padding: 1% 2%;
+    margin: 0 3%;
+}
+
+article p.form {
+    text-align: left;
+}
+
+article.kezdo {
+    border: none;
+    border-radius: 10px;
+    margin: 10% 2%;
+    width: auto;
+}
+
+article a {
+    color: rgb(233,
+            184,
+            23);
+    text-decoration: none;
+    text-align: center;
+    padding: 1% 5%;
+    border-radius: 15px;
+    border: 2px solid rgb(233,
+            184,
+            23);
+}
+
+aside a {
+    color: rgb(233,
+            184,
+            23);
+    text-decoration: none;
+}
+
+article a:hover,
+aside a:hover {
+    color: rgb(245, 217, 125);
+    background-color: rgb(171, 199, 231);
+}
+
+p.linkek {
+    text-align: center;
+    margin: 3% 0;
+}
+
+p.labjegyzet {
+    color: rgb(233,
+            184,
+            23);
+    text-align: center;
+    margin: 0 10%;
+    border: 3px solid rgb(186, 175, 175);
+    border-radius: 10px;
+}
+
+.gombok {
+    background-color: rgb(197,
+            214,
+            234);
+    border: 2px solid rgb(233,
+            184,
+            23);
+    color: rgb(233,
+            184,
+            23);
+    border-radius: 10px;
+    font-size: medium;
+}
+
+.gombok:hover {
+    background-color: rgb(171, 199, 231);
+}
+
+p.gomb_rendezes {
+    text-align: center;
+}
+
+#mem {
+    background-color: rgb(197,
+            214,
+            234);
+    visibility: hidden;
+}
+
+.btn {
+    background-color: white;
+    border: 3px solid rgb(233,
+            184,
+            23);
+}
+
+.btn:hover, #fajl_gomb:hover {
+    background-color: rgb(171, 199, 231);
+    color: rgb(233,
+            184,
+            23);
+}
+
+#fajl_gomb{
+    margin: 1% 0;
+    font-size: 1em;
+    color: rgb(233,
+                184,
+                23);
+    background-color: rgb(197,
+                214,
+                234);
+    border: 2px solid rgb(233,
+                        184,
+                        23);
+    border-radius: 5px;
+}
+
+textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    /* forrás:https: [SOLVED]How to make a text field responsive? - HTML-CSS. Elérhető: //forum.freecodecamp.org/t/solved-how-to-make-a-text-field-responsive/73747
+    felhasználó: "drtechno1971" letöltve:2023.12.01*/
+}
+
+a.segedletek {
+    padding: 0.1% 1%;
+    border: none;
+    text-decoration: underline;
+}
+
+li.js_opciok {
+    list-style-type: square;
+    margin: 0 6%;
+    width: fit-content;
+}
+
+li.js_opciok:hover {
+    color: rgb(233,
+            184,
+            23);
+    cursor: pointer;
+    /*mutató kéz kurzor*/
+}
+
+.gal_kepek {
+    margin: auto;
+    width: 95vw;
+    height: 90vw;
+}
+
+#kiiras {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.bev_kepek {
+    width: 100%;
+    height: auto;
+}
+
+#bevezeto {
+    text-align: center;
+    /*töri tesz képek, címek js-ben*/
+}
+
+span.kiemel {
+    color: rgb(233,
+            184,
+            23);
+    font-weight: bold;
+}
+
+span.fontos {
+    color: rgb(180, 4, 4);
+    font-weight: bold;
+}
+
+label.error{
+    color: red;
+}
+
+@media all and (min-width: 600px) {
+
+    /*tabletes nézet*/
+
+    body {
+        font-size: 1.3em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    nav {
+        flex-basis: 50%;
+        order: 1;
+    }
+
+    article.kezdo {
+        order: 2;
+        margin: 2%;
+        flex-basis: 46%;
+        height: fit-content;
+        /*margin b + j = 4% -->75% + 25% nav*/
+    }
+
+    /*sorrend megoldásban segítettek media_elso classok*/
+    article.media_elso {
+        order: 3;
+        flex-basis: 80%;
+        margin: 10%;
+    }
+
+    .gal_kepek {
+        margin: 2%;
+        flex-basis: 96%;
+        order: 3;
+        width: 75vw;
+        height: 70vw;
+    }
+
+    aside.media_elso {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    aside {
+        order: 2;
+        margin: 2%;
+        flex-basis: 46%;
+        height: fit-content;
+    }
+
+    footer {
+        order: 4;
+    }
+
+    article {
+        flex-basis: 90%;
+        order: 3;
+    }
+
+    .bev_kepek {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media all and (min-width: 1000px) {
+
+    /*számítógépekre*/
+    nav {
+        flex-basis: 100%;
+        height: fit-content;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .nav_container {
+        flex-direction: row;
+    }
+
+    li {
+        width: 23%;
+        margin: 0;
+    }
+
+    article.kezdo {
+        order: 2;
+        margin: 2%;
+        flex-basis: 100%;
+        height: fit-content;
+    }
+
+    article.media_elso {
+        order: 3;
+        flex-basis: 40%;
+        margin: 5%;
+        height: fit-content;
+    }
+
+    .gal_kepek {
+        margin: 0;
+        margin-bottom: 1%;
+        flex-basis: 70%;
+        order: 2;
+        width: 60vw;
+        height: 40vw;
+    }
+
+    aside.media_elso {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    aside {
+        order: 1;
+        margin: 0 2%;
+        flex-basis: 25%;
+        height: fit-content;
+    }
+
+    footer {
+        order: 4;
+    }
+
+    article {
+        flex-basis: 71%;
+        order: 2;
+        margin: 0;
+        margin-bottom: 2%;
+    }
+
+    article.gep_nezet {
+        flex-basis: 100%;
+        width: 80%;
+        margin: 2% 10%;
+    }
+
+    .bev_kepek {
+        width: 60%;
+        height: auto;
+    }
+}
