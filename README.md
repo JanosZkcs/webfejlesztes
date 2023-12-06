@@ -1,9 +1,6 @@
 Oldal készítője: Zakócs János
 -----------------------------------
 
-Github elérhetőség: 
------------------------------------------------------
-
 A weblap egy elképzelt oldal a Törmémelem felsőfokon nevezetű magyar mémoldal számára. Az oldal kialakítása és funkciói a tevékenységeikkel összhangban áll.(Történelem mémek, oktatás)
 ---------------------------------------------------
 
